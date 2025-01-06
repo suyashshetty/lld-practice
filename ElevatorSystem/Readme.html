@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevator System</title>
+</head>
+<body>
+    <h1>Elevator System</h1>
+
+    <h2>Step 1: Requirements Analysis</h2>
+
+    <h3>Functional Requirements</h3>
+    <ul>
+        <li><strong>Basic Movement</strong>: Two elevators (A and B) that move up and down.</li>
+        <li><strong>External Requests</strong>: Users can request an elevator at any floor using an external button (up/down).</li>
+        <li><strong>Internal Requests</strong>: Users can request to go to any floor using internal buttons.</li>
+        <li><strong>Stop at Requested Floors</strong>: Elevators stop at requested floors.</li>
+        <li><strong>Priority Handling</strong>: Elevators use different strategies to handle multiple requests.</li>
+        <li><strong>Arrival Notification</strong>: Elevators alert users when they reach the requested floor.</li>
+    </ul>
+
+    <h3>Safety Requirements</h3>
+    <ul>
+        <li><strong>Weight Monitoring</strong>: Elevators warn and pause if weight exceeds 90% of capacity.</li>
+        <li><strong>Abnormal Operation</strong>: Elevators pause and display alerts during abnormal operations.</li>
+        <li><strong>Reserve Mode</strong>: Serve a single floor exclusively for a time period.</li>
+        <li><strong>Maintenance Mode</strong>: Cease operations for repairs.</li>
+    </ul>
+
+    <h3>Emergency Requirements</h3>
+    <ul>
+        <li><strong>Manual Override</strong>: Allow doors to be opened externally during emergencies.</li>
+        <li><strong>Emergency Brakes</strong>: Stop and hold in case of power loss or emergencies.</li>
+        <li><strong>Fire/Emergency Protocol</strong>: Handle fire and emergency scenarios safely.</li>
+    </ul>
+
+    <h3>Display and Communication</h3>
+    <ul>
+        <li><strong>Floor Display</strong>: Show current elevator position and direction outside each floor.</li>
+    </ul>
+
+    <h2>Non-Functional Requirements for Elevator System</h2>
+
+    <h3>1. Efficiency</h3>
+    <ul>
+        <li>Elevators should be efficient in <strong>power management</strong> and <strong>time management</strong>.</li>
+        <li>In case of a tie, <strong>prioritize time management</strong> over power management.</li>
+    </ul>
+
+    <h3>2. Usability</h3>
+    <ul>
+        <li>Elevators should have <strong>intuitive button design</strong> and easy-to-use navigation.</li>
+        <li>Buttons should include <strong>Braille markings</strong> and <strong>audible feedback</strong> for accessibility.</li>
+    </ul>
+
+    <h3>3. Monitoring and Logging</h3>
+    <ul>
+        <li>The system should have a <strong>monitoring system</strong> to log and analyze:
+            <ul>
+                <li>Power supply usage.</li>
+                <li>Weight inside the elevator.</li>
+                <li>Movement and operational status.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>4. Safety Standards</h3>
+    <ul>
+        <li>Elevators must comply with <strong>ISO safety standards</strong>.</li>
+        <li>A <strong>fire extinguisher</strong> should be installed in each elevator for fire safety.</li>
+        <li>Conduct periodic safety drills and equipment inspections.</li>
+        <li>Elevators should have a ventilation system to ensure air circulation inside the cabin for user comfort and safety.</li>
+    </ul>
+
+    <h3>5. Maintainability and Upgradability</h3>
+    <ul>
+        <li>Elevators should be easily maintainable with modular parts for repairs or upgrades.</li>
+        <li>Software should support upgrades to incorporate <strong>different strategies</strong> based on usage or requirements.</li>
+    </ul>
+
+    <h3>6. Alerts and Notifications</h3>
+    <ul>
+        <li>Elevators should alert users in the following scenarios:
+            <ul>
+                <li><strong>Overweight condition</strong>.</li>
+                <li><strong>Door open</strong> for too long.</li>
+                <li><strong>Abnormal operations</strong> (e.g., sensor/motor issues).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>7. Energy Efficiency</h3>
+    <ul>
+        <li>Elevators should consume <strong>minimal power</strong> when idling at any floor.</li>
+        <li>Use energy-saving modes like standby lighting and regenerative braking systems.</li>
+    </ul>
+
+    <h3>8. Emergency Handling</h3>
+    <ul>
+        <li>Elevators should have a <strong>power backup system</strong> capable of safely grounding the elevator to the base floor during a power outage.</li>
+        <li><strong>Emergency brakes</strong> must be deployed to stop and hold in emergencies.</li>
+        <li>Include a <strong>manual override</strong> mechanism for external door opening during fire/emergency.</li>
+    </ul>
+
+    <h2>Core Entities</h2>
+    <ul>
+        <li>Button</li>
+        <li>Door</li>
+        <li>Elevator</li>
+        <li>Floor</li>
+        <li>Light</li>
+        <li>Emergency Brake</li>
+        <li>Controller</li>
+        <li>Weight Sensor</li>
+        <li>Display</li>
+        <li>Power Backup</li>
+    </ul>
+</body>
+</html>
